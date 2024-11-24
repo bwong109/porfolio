@@ -164,6 +164,24 @@ nav {
     max-width: 1400px;
     margin: 0 auto;
     transition-delay: 0.2s;
+    background-color: #f8f9fa;  /* Light gray background */
+    border-radius: 16px;        /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);  /* Subtle shadow */
+}
+
+/* Update text colors for better contrast */
+.experience-details h3, .skills-details h3 {
+    color: #1a1a1a;  /* Darker text for headers */
+}
+
+.experience-details p, .skills-details p {
+    color: #4a4a4a;  /* Slightly darker gray for better readability */
+}
+
+/* Update skill icon background */
+.skill-icon {
+    background: #ffffff;  /* White background for icons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);  /* Subtle shadow */
 }
 
 .section-header {
