@@ -66,6 +66,34 @@ nav {
     transition: width 0.3s ease;
 }
 
+/* Add these media queries for mobile */
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .logo {
+        min-width: 40px;
+        margin-right: 1rem; /* Add space between logo and links */
+    }
+
+    .nav-links {
+        gap: 1.5rem; /* Slightly reduced gap on mobile */
+        padding-right: 1rem; /* Add some padding at the end for scrolling */
+    }
+}
+
+/* Optional: Hide scrollbar but keep functionality */
+nav::-webkit-scrollbar {
+    display: none;
+}
+nav {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 /* ==========================================================================
    Hero Section
    ========================================================================== */
