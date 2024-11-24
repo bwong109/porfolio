@@ -49,18 +49,6 @@ function updateActiveLink() {
     });
 }
 
-// Local time update function
-function updateTime() {
-    const timeElement = document.getElementById('local-time');
-    const now = new Date();
-    timeElement.textContent = now.toLocaleTimeString('en-US', {
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: true
-    }).toLowerCase();
-}
-
 // Event Listeners
 window.addEventListener('scroll', updateActiveLink);
 setInterval(updateTime, 1000);
